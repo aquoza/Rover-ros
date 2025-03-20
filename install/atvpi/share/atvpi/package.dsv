@@ -1,0 +1,9 @@
+source;share/atvpi/hook/pythonpath.ps1
+source;share/atvpi/hook/pythonpath.dsv
+source;share/atvpi/hook/pythonpath.sh
+source;share/atvpi/hook/ament_prefix_path.ps1
+source;share/atvpi/hook/ament_prefix_path.dsv
+source;share/atvpi/hook/ament_prefix_path.sh
+source;../../build/atvpi/share/atvpi/hook/pythonpath_develop.ps1
+source;../../build/atvpi/share/atvpi/hook/pythonpath_develop.dsv
+source;../../build/atvpi/share/atvpi/hook/pythonpath_develop.sh

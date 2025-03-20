@@ -1,0 +1,3 @@
+[console_scripts]
+gamepad_websocket_node = gamepad_websocket.gamepad_websocket_node:main
+

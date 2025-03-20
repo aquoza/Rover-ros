@@ -1,0 +1,13 @@
+package.xml
+setup.cfg
+setup.py
+gamepad_websocket/__init__.py
+gamepad_websocket/gamepad-websocket-node.py
+gamepad_websocket.egg-info/PKG-INFO
+gamepad_websocket.egg-info/SOURCES.txt
+gamepad_websocket.egg-info/dependency_links.txt
+gamepad_websocket.egg-info/entry_points.txt
+gamepad_websocket.egg-info/requires.txt
+gamepad_websocket.egg-info/top_level.txt
+gamepad_websocket.egg-info/zip-safe
+resource/gamepad_websocket
