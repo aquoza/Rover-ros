@@ -1,0 +1,24 @@
+running egg_info
+writing ../../build/atvpi/atvpi.egg-info/PKG-INFO
+writing dependency_links to ../../build/atvpi/atvpi.egg-info/dependency_links.txt
+writing entry points to ../../build/atvpi/atvpi.egg-info/entry_points.txt
+writing requirements to ../../build/atvpi/atvpi.egg-info/requires.txt
+writing top-level names to ../../build/atvpi/atvpi.egg-info/top_level.txt
+reading manifest file '../../build/atvpi/atvpi.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file '../../build/atvpi/atvpi.egg-info/SOURCES.txt'
+running build
+running build_py
+copying atvpi/thermal_ros.py -> /home/pi/code/ws/build/atvpi/build/lib/atvpi
+running install
+running install_lib
+copying /home/pi/code/ws/build/atvpi/build/lib/atvpi/thermal_ros.py -> /home/pi/code/ws/install/atvpi/lib/python3.10/site-packages/atvpi
+byte-compiling /home/pi/code/ws/install/atvpi/lib/python3.10/site-packages/atvpi/thermal_ros.py to thermal_ros.cpython-310.pyc
+running install_data
+running install_egg_info
+removing '/home/pi/code/ws/install/atvpi/lib/python3.10/site-packages/atvpi-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/atvpi/atvpi.egg-info to /home/pi/code/ws/install/atvpi/lib/python3.10/site-packages/atvpi-0.0.0-py3.10.egg-info
+running install_scripts
+Installing sub script to /home/pi/code/ws/install/atvpi/lib/atvpi
+Installing talker script to /home/pi/code/ws/install/atvpi/lib/atvpi
+writing list of installed files to '/home/pi/code/ws/build/atvpi/install.log'

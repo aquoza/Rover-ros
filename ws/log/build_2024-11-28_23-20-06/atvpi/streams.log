@@ -1,0 +1,27 @@
+[2.493s] Invoking command in '/home/pi/code/ws/src/atvpi': PYTHONPATH=/home/pi/code/ws/build/atvpi/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/pi/code/ws/install/atvpi/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/atvpi build --build-base /home/pi/code/ws/build/atvpi/build install --record /home/pi/code/ws/build/atvpi/install.log --single-version-externally-managed install_data
+[3.434s] running egg_info
+[3.436s] writing ../../build/atvpi/atvpi.egg-info/PKG-INFO
+[3.437s] writing dependency_links to ../../build/atvpi/atvpi.egg-info/dependency_links.txt
+[3.438s] writing entry points to ../../build/atvpi/atvpi.egg-info/entry_points.txt
+[3.439s] writing requirements to ../../build/atvpi/atvpi.egg-info/requires.txt
+[3.439s] writing top-level names to ../../build/atvpi/atvpi.egg-info/top_level.txt
+[3.447s] reading manifest file '../../build/atvpi/atvpi.egg-info/SOURCES.txt'
+[3.449s] adding license file 'LICENSE'
+[3.451s] writing manifest file '../../build/atvpi/atvpi.egg-info/SOURCES.txt'
+[3.452s] running build
+[3.452s] running build_py
+[3.453s] copying atvpi/thermal_ros.py -> /home/pi/code/ws/build/atvpi/build/lib/atvpi
+[3.455s] running install
+[3.456s] running install_lib
+[3.459s] copying /home/pi/code/ws/build/atvpi/build/lib/atvpi/thermal_ros.py -> /home/pi/code/ws/install/atvpi/lib/python3.10/site-packages/atvpi
+[3.463s] byte-compiling /home/pi/code/ws/install/atvpi/lib/python3.10/site-packages/atvpi/thermal_ros.py to thermal_ros.cpython-310.pyc
+[3.465s] Sorry: TabError: inconsistent use of tabs and spaces in indentation (thermal_ros.py, line 143)
+[3.466s] running install_data
+[3.466s] running install_egg_info
+[3.473s] removing '/home/pi/code/ws/install/atvpi/lib/python3.10/site-packages/atvpi-0.0.0-py3.10.egg-info' (and everything under it)
+[3.474s] Copying ../../build/atvpi/atvpi.egg-info to /home/pi/code/ws/install/atvpi/lib/python3.10/site-packages/atvpi-0.0.0-py3.10.egg-info
+[3.479s] running install_scripts
+[3.556s] Installing sub script to /home/pi/code/ws/install/atvpi/lib/atvpi
+[3.557s] Installing talker script to /home/pi/code/ws/install/atvpi/lib/atvpi
+[3.558s] writing list of installed files to '/home/pi/code/ws/build/atvpi/install.log'
+[3.671s] Invoked command in '/home/pi/code/ws/src/atvpi' returned '0': PYTHONPATH=/home/pi/code/ws/build/atvpi/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/pi/code/ws/install/atvpi/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/atvpi build --build-base /home/pi/code/ws/build/atvpi/build install --record /home/pi/code/ws/build/atvpi/install.log --single-version-externally-managed install_data

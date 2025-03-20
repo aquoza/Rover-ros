@@ -1,0 +1,48 @@
+[2.481s] Invoking command in '/home/pi/code/ws/src/atvpi': PYTHONPATH=/home/pi/code/ws/build/atvpi/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/pi/code/ws/install/atvpi/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/atvpi build --build-base /home/pi/code/ws/build/atvpi/build install --record /home/pi/code/ws/build/atvpi/install.log --single-version-externally-managed install_data
+[3.411s] running egg_info
+[3.413s] creating ../../build/atvpi/atvpi.egg-info
+[3.414s] writing ../../build/atvpi/atvpi.egg-info/PKG-INFO
+[3.415s] writing dependency_links to ../../build/atvpi/atvpi.egg-info/dependency_links.txt
+[3.415s] writing entry points to ../../build/atvpi/atvpi.egg-info/entry_points.txt
+[3.416s] writing requirements to ../../build/atvpi/atvpi.egg-info/requires.txt
+[3.416s] writing top-level names to ../../build/atvpi/atvpi.egg-info/top_level.txt
+[3.418s] writing manifest file '../../build/atvpi/atvpi.egg-info/SOURCES.txt'
+[3.425s] reading manifest file '../../build/atvpi/atvpi.egg-info/SOURCES.txt'
+[3.425s] adding license file 'LICENSE'
+[3.428s] writing manifest file '../../build/atvpi/atvpi.egg-info/SOURCES.txt'
+[3.428s] running build
+[3.429s] running build_py
+[3.429s] creating /home/pi/code/ws/build/atvpi/build
+[3.430s] creating /home/pi/code/ws/build/atvpi/build/lib
+[3.430s] creating /home/pi/code/ws/build/atvpi/build/lib/atvpi
+[3.430s] copying atvpi/__init__.py -> /home/pi/code/ws/build/atvpi/build/lib/atvpi
+[3.431s] copying atvpi/sub_old.py -> /home/pi/code/ws/build/atvpi/build/lib/atvpi
+[3.431s] copying atvpi/uart.py -> /home/pi/code/ws/build/atvpi/build/lib/atvpi
+[3.432s] copying atvpi/sub_node.py -> /home/pi/code/ws/build/atvpi/build/lib/atvpi
+[3.433s] copying atvpi/pub.py -> /home/pi/code/ws/build/atvpi/build/lib/atvpi
+[3.434s] running install
+[3.435s] running install_lib
+[3.438s] creating /home/pi/code/ws/install/atvpi/lib/python3.10/site-packages/atvpi
+[3.438s] copying /home/pi/code/ws/build/atvpi/build/lib/atvpi/__init__.py -> /home/pi/code/ws/install/atvpi/lib/python3.10/site-packages/atvpi
+[3.439s] copying /home/pi/code/ws/build/atvpi/build/lib/atvpi/sub_old.py -> /home/pi/code/ws/install/atvpi/lib/python3.10/site-packages/atvpi
+[3.440s] copying /home/pi/code/ws/build/atvpi/build/lib/atvpi/uart.py -> /home/pi/code/ws/install/atvpi/lib/python3.10/site-packages/atvpi
+[3.440s] copying /home/pi/code/ws/build/atvpi/build/lib/atvpi/sub_node.py -> /home/pi/code/ws/install/atvpi/lib/python3.10/site-packages/atvpi
+[3.441s] copying /home/pi/code/ws/build/atvpi/build/lib/atvpi/pub.py -> /home/pi/code/ws/install/atvpi/lib/python3.10/site-packages/atvpi
+[3.443s] byte-compiling /home/pi/code/ws/install/atvpi/lib/python3.10/site-packages/atvpi/__init__.py to __init__.cpython-310.pyc
+[3.445s] byte-compiling /home/pi/code/ws/install/atvpi/lib/python3.10/site-packages/atvpi/sub_old.py to sub_old.cpython-310.pyc
+[3.446s] byte-compiling /home/pi/code/ws/install/atvpi/lib/python3.10/site-packages/atvpi/uart.py to uart.cpython-310.pyc
+[3.448s] byte-compiling /home/pi/code/ws/install/atvpi/lib/python3.10/site-packages/atvpi/sub_node.py to sub_node.cpython-310.pyc
+[3.452s] byte-compiling /home/pi/code/ws/install/atvpi/lib/python3.10/site-packages/atvpi/pub.py to pub.cpython-310.pyc
+[3.454s] running install_data
+[3.454s] creating /home/pi/code/ws/install/atvpi/share/ament_index
+[3.455s] creating /home/pi/code/ws/install/atvpi/share/ament_index/resource_index
+[3.455s] creating /home/pi/code/ws/install/atvpi/share/ament_index/resource_index/packages
+[3.455s] copying resource/atvpi -> /home/pi/code/ws/install/atvpi/share/ament_index/resource_index/packages
+[3.456s] copying package.xml -> /home/pi/code/ws/install/atvpi/share/atvpi
+[3.456s] running install_egg_info
+[3.463s] Copying ../../build/atvpi/atvpi.egg-info to /home/pi/code/ws/install/atvpi/lib/python3.10/site-packages/atvpi-0.0.0-py3.10.egg-info
+[3.467s] running install_scripts
+[3.544s] Installing sub script to /home/pi/code/ws/install/atvpi/lib/atvpi
+[3.544s] Installing talker script to /home/pi/code/ws/install/atvpi/lib/atvpi
+[3.546s] writing list of installed files to '/home/pi/code/ws/build/atvpi/install.log'
+[3.659s] Invoked command in '/home/pi/code/ws/src/atvpi' returned '0': PYTHONPATH=/home/pi/code/ws/build/atvpi/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/pi/code/ws/install/atvpi/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/atvpi build --build-base /home/pi/code/ws/build/atvpi/build install --record /home/pi/code/ws/build/atvpi/install.log --single-version-externally-managed install_data

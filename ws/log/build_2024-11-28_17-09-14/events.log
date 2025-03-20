@@ -1,0 +1,71 @@
+[0.000000] (-) TimerEvent: {}
+[0.001520] (atvpi) JobQueued: {'identifier': 'atvpi', 'dependencies': OrderedDict()}
+[0.002139] (atvpi) JobStarted: {'identifier': 'atvpi'}
+[0.099043] (-) TimerEvent: {}
+[0.199635] (-) TimerEvent: {}
+[0.300255] (-) TimerEvent: {}
+[0.400900] (-) TimerEvent: {}
+[0.501510] (-) TimerEvent: {}
+[0.602266] (-) TimerEvent: {}
+[0.702853] (-) TimerEvent: {}
+[0.803455] (-) TimerEvent: {}
+[0.904067] (-) TimerEvent: {}
+[1.004931] (-) TimerEvent: {}
+[1.107257] (-) TimerEvent: {}
+[1.208272] (-) TimerEvent: {}
+[1.308866] (-) TimerEvent: {}
+[1.409528] (-) TimerEvent: {}
+[1.510232] (-) TimerEvent: {}
+[1.610895] (-) TimerEvent: {}
+[1.711472] (-) TimerEvent: {}
+[1.812021] (-) TimerEvent: {}
+[1.912571] (-) TimerEvent: {}
+[2.013157] (-) TimerEvent: {}
+[2.113768] (-) TimerEvent: {}
+[2.214546] (-) TimerEvent: {}
+[2.315189] (-) TimerEvent: {}
+[2.415797] (-) TimerEvent: {}
+[2.516465] (-) TimerEvent: {}
+[2.617165] (-) TimerEvent: {}
+[2.717906] (-) TimerEvent: {}
+[2.818592] (-) TimerEvent: {}
+[2.919195] (-) TimerEvent: {}
+[3.019941] (-) TimerEvent: {}
+[3.106532] (atvpi) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/atvpi', 'build', '--build-base', '/home/pi/code/ws/build/atvpi/build', 'install', '--record', '/home/pi/code/ws/build/atvpi/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/pi/code/ws/src/atvpi', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'pi', 'SSH_CLIENT': '192.168.0.102 56800 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/pi', 'RANGER_LEVEL': '1', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'PAGER': 'sensible-pager', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'ESCDELAY': '25', 'ROS_DISTRO': 'humble', 'LOGNAME': 'pi', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '1', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/pi/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'ROS_DOMAIN_ID': '1', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PWD': '/home/pi/code/ws/build/atvpi', 'SSH_CONNECTION': '192.168.0.102 56800 192.168.0.101 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/pi/code/ws/build/atvpi/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/pi/code/ws/install/atvpi/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'EDITOR': 'sensible-editor'}, 'shell': False}
+[3.120467] (-) TimerEvent: {}
+[3.221188] (-) TimerEvent: {}
+[3.321898] (-) TimerEvent: {}
+[3.422522] (-) TimerEvent: {}
+[3.523098] (-) TimerEvent: {}
+[3.623671] (-) TimerEvent: {}
+[3.724271] (-) TimerEvent: {}
+[3.824885] (-) TimerEvent: {}
+[3.925491] (-) TimerEvent: {}
+[4.026149] (-) TimerEvent: {}
+[4.042120] (atvpi) StdoutLine: {'line': b'running egg_info\n'}
+[4.044608] (atvpi) StdoutLine: {'line': b'writing ../../build/atvpi/atvpi.egg-info/PKG-INFO\n'}
+[4.049543] (atvpi) StdoutLine: {'line': b'writing dependency_links to ../../build/atvpi/atvpi.egg-info/dependency_links.txt\n'}
+[4.050557] (atvpi) StdoutLine: {'line': b'writing entry points to ../../build/atvpi/atvpi.egg-info/entry_points.txt\n'}
+[4.051327] (atvpi) StdoutLine: {'line': b'writing requirements to ../../build/atvpi/atvpi.egg-info/requires.txt\n'}
+[4.052084] (atvpi) StdoutLine: {'line': b'writing top-level names to ../../build/atvpi/atvpi.egg-info/top_level.txt\n'}
+[4.061167] (atvpi) StdoutLine: {'line': b"reading manifest file '../../build/atvpi/atvpi.egg-info/SOURCES.txt'\n"}
+[4.066930] (atvpi) StdoutLine: {'line': b"adding license file 'LICENSE'\n"}
+[4.069544] (atvpi) StdoutLine: {'line': b"writing manifest file '../../build/atvpi/atvpi.egg-info/SOURCES.txt'\n"}
+[4.070239] (atvpi) StdoutLine: {'line': b'running build\n'}
+[4.070756] (atvpi) StdoutLine: {'line': b'running build_py\n'}
+[4.074212] (atvpi) StdoutLine: {'line': b'running install\n'}
+[4.075642] (atvpi) StdoutLine: {'line': b'running install_lib\n'}
+[4.082374] (atvpi) StdoutLine: {'line': b'running install_data\n'}
+[4.083037] (atvpi) StdoutLine: {'line': b'running install_egg_info\n'}
+[4.090446] (atvpi) StdoutLine: {'line': b"removing '/home/pi/code/ws/install/atvpi/lib/python3.10/site-packages/atvpi-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[4.092055] (atvpi) StdoutLine: {'line': b'Copying ../../build/atvpi/atvpi.egg-info to /home/pi/code/ws/install/atvpi/lib/python3.10/site-packages/atvpi-0.0.0-py3.10.egg-info\n'}
+[4.100651] (atvpi) StdoutLine: {'line': b'running install_scripts\n'}
+[4.126287] (-) TimerEvent: {}
+[4.179347] (atvpi) StdoutLine: {'line': b'Installing sub script to /home/pi/code/ws/install/atvpi/lib/atvpi\n'}
+[4.180196] (atvpi) StdoutLine: {'line': b'Installing talker script to /home/pi/code/ws/install/atvpi/lib/atvpi\n'}
+[4.181716] (atvpi) StdoutLine: {'line': b"writing list of installed files to '/home/pi/code/ws/build/atvpi/install.log'\n"}
+[4.226524] (-) TimerEvent: {}
+[4.294228] (atvpi) CommandEnded: {'returncode': 0}
+[4.327651] (-) TimerEvent: {}
+[4.367312] (atvpi) JobEnded: {'identifier': 'atvpi', 'rc': 0}
+[4.369905] (-) EventReactorShutdown: {}
