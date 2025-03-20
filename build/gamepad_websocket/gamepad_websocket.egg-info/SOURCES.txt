@@ -2,7 +2,7 @@ package.xml
 setup.cfg
 setup.py
 gamepad_websocket/__init__.py
-gamepad_websocket/gamepad-websocket-node.py
+gamepad_websocket/gamepad_websocket_node.py
 gamepad_websocket.egg-info/PKG-INFO
 gamepad_websocket.egg-info/SOURCES.txt
 gamepad_websocket.egg-info/dependency_links.txt
