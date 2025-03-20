@@ -1,0 +1,20 @@
+[0.655s] Invoking command in '/home/aquoza/Rover-ros/build/atvpi': PYTHONPATH=/home/aquoza/Rover-ros/build/atvpi/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/aquoza/Rover-ros/install/atvpi/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/aquoza/Rover-ros/build/atvpi/build --no-deps symlink_data
+[0.839s] running develop
+[0.839s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[0.839s]   warnings.warn(
+[0.966s] running egg_info
+[0.966s] writing atvpi.egg-info/PKG-INFO
+[0.966s] writing dependency_links to atvpi.egg-info/dependency_links.txt
+[0.966s] writing entry points to atvpi.egg-info/entry_points.txt
+[0.966s] writing requirements to atvpi.egg-info/requires.txt
+[0.966s] writing top-level names to atvpi.egg-info/top_level.txt
+[0.968s] reading manifest file 'atvpi.egg-info/SOURCES.txt'
+[0.969s] writing manifest file 'atvpi.egg-info/SOURCES.txt'
+[0.970s] running build_ext
+[0.970s] Creating /home/aquoza/Rover-ros/install/atvpi/lib/python3.10/site-packages/atvpi.egg-link (link to .)
+[0.970s] Installing sub script to /home/aquoza/Rover-ros/install/atvpi/lib/atvpi
+[0.971s] Installing talker script to /home/aquoza/Rover-ros/install/atvpi/lib/atvpi
+[0.971s] 
+[0.971s] Installed /home/aquoza/Rover-ros/build/atvpi
+[0.971s] running symlink_data
+[1.003s] Invoked command in '/home/aquoza/Rover-ros/build/atvpi' returned '0': PYTHONPATH=/home/aquoza/Rover-ros/build/atvpi/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/aquoza/Rover-ros/install/atvpi/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/aquoza/Rover-ros/build/atvpi/build --no-deps symlink_data
