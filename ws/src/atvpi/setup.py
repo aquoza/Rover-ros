@@ -21,7 +21,8 @@ setup(
     entry_points={
         'console_scripts': [
             'sub = atvpi.sub_node:main',
-            'talker = atvpi.pub:main'
+            'talker = atvpi.pub:main',
+            'gamepad_websocket_node = atvpi.gamepad-websocket-node:main',
         ],
     },
 )
