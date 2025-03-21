@@ -22,7 +22,7 @@ setup(
         'console_scripts': [
             'sub = atvpi.sub_node:main',
             'talker = atvpi.pub:main',
-            'gamepad_websocket_node = gamepad_websocket.gamepad_websocket_node:main',
+            'gamepad_websocket_node = atvpi.gamepad_websocket_node:main',
         ],
     },
 )
