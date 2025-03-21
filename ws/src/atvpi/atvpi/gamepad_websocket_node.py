@@ -44,11 +44,11 @@ class GamepadWebSocketNode(Node):
     def publish_data(self, data: dict):
         # Get axis values
         axis_values = Float32MultiArray()
-        axis_values.data = float(data['axes'])
+        axis_values.data = [float(i) for i in data['axes']]
 
         # Get button values
         button_values = Int32MultiArray()
-        button_values.data = int(data['buttons'])
+        button_values.data = [int(i) for i in data['buttons']]
 
         # Check for mode toggle on button[1]
         button_2_state = button_values.data[1]
