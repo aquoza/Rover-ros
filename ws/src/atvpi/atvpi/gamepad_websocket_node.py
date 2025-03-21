@@ -35,20 +35,20 @@ class GamepadWebSocketNode(Node):
                     # Receive gamepad data
                     data = await websocket.recv()
                     gamepad_data = json.loads(data)
-                    self.get_logger().info(f"Gamepad Data: {gamepad_data['axes']}")
-                    # self.publish_data(gamepad_data)                
+                    self.get_logger().info(f"Gamepad Data: {gamepad_data}")
+                    self.publish_data(gamepad_data)                
                 except Exception as e:
                     self.get_logger().error(f"WebSocket error: {e}")
                     break
 
-    def publish_data(self, data):
+    def publish_data(self, data: dict):
         # Get axis values
         axis_values = Float32MultiArray()
-        axis_values.data = data["axes"]
+        axis_values.data = data['axes']
 
         # Get button values
         button_values = Int32MultiArray()
-        button_values.data = data["buttons"]
+        button_values.data = data['buttons']
 
         # Check for mode toggle on button[1]
         button_2_state = button_values.data[1]
