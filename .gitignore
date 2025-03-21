@@ -2,6 +2,8 @@
 *
 
 # Except the following files
+!ws
+!src
 !atvpi
 !pub.py
 !sub_node.py
