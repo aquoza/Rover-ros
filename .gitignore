@@ -1,2 +1,8 @@
-log
-__pycache__
+# Ignore everything
+*
+
+# Except the following files
+!pub.py
+!sub_node.py
+!setup.py
+!gamepad_websocket_node.py

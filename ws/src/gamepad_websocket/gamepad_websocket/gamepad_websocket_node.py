@@ -10,7 +10,7 @@ class GamepadWebSocketNode(Node):
         self.get_logger().info("Gamepad WebSocket Node Started")
 
         # WebSocket server details
-        self.websocket_uri = "ws://<RPI_IP>:8000/ws/gamepad"  # Replace with your RPi's IP
+        self.websocket_uri = "ws://localhost:8000/ws/gamepad"  # Replace with your RPi's IP
         self.loop = asyncio.get_event_loop()
 
         # Start WebSocket client
@@ -20,7 +20,7 @@ class GamepadWebSocketNode(Node):
         """Connect to the WebSocket server and listen for gamepad data."""
         async with websockets.connect(self.websocket_uri) as websocket:
             self.get_logger().info("Connected to WebSocket server")
-            while rclpy.ok():
+            while 1:
                 try:
                     # Receive gamepad data
                     data = await websocket.recv()
