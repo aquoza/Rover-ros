@@ -82,7 +82,7 @@ class JoystickSubscriber(Node):
                 self.dc_values = [throttle*((l**2 + (R+w)**2)**0.5/abs(R))*(1-0.5*abs(steer)),throttle*((l**2 + (R-w)**2)**0.5/abs(R))*(1-0.5*abs(steer))] # R, L
 
         elif(self.mode == 1): # differential (on the spot)
-            throttle = self.axes[2]*1500 # limit max duty
+            throttle = self.axes[3]*1500 # limit max duty
 
             theta = 4800.0/servo_range*math.atan(l/w)
 
