@@ -2,7 +2,9 @@
 *
 
 # Except the following files
+!atvpi
 !pub.py
 !sub_node.py
 !setup.py
+!gamepad_websocket
 !gamepad_websocket_node.py
