@@ -10,7 +10,7 @@ class GamepadWebSocketNode(Node):
         self.get_logger().info("Gamepad WebSocket Node Started")
 
         # WebSocket server details
-        self.websocket_uri = "ws://localhost:8000/ws/gamepad"  # Replace with your RPi's IP
+        self.websocket_uri = "ws://atvpi.local:8000/ws/gamepad"  # Replace with your RPi's IP
         self.loop = asyncio.get_event_loop()
 
         # Start WebSocket client
