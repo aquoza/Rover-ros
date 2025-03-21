@@ -1,4 +1,0 @@
-[console_scripts]
-sub = atvpi.sub_node:main
-talker = atvpi.pub:main
-

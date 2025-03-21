@@ -1,5 +1,0 @@
-  File "/home/pi/code/ws/install/atvpi/lib/python3.10/site-packages/atvpi/sub_node.py", line 7
-    from ~/code/ws/src/atvpi/atvpi/thermal_ros import takePic
-         ^
-SyntaxError: invalid syntax
-
