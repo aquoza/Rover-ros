@@ -36,7 +36,8 @@ class GamepadWebSocketNode(Node):
                     data = await websocket.recv()
                     gamepad_data = json.loads(data)
                     self.get_logger().info(f"Gamepad Data: {gamepad_data}")
-                    self.publish_data(gamepad_data)                
+                    self.get_logger().info(type(gamepad_data))
+                    # self.publish_data(gamepad_data)                
                 except Exception as e:
                     self.get_logger().error(f"WebSocket error: {e}")
                     break
