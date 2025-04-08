@@ -23,6 +23,8 @@ setup(
             'sub = atvpi.sub_node:main',
             'talker = atvpi.pub:main',
             'gamepad_websocket_node = atvpi.gamepad_websocket_node:main',
+            'thermal_camera_node = atvpi.thermal_camera:main',
+
         ],
     },
 )

@@ -12,7 +12,7 @@ from cv_bridge import CvBridge
 
 class WebSocketImageSender(Node):
     def __init__(self):
-        super().__init__('websocket_image_sender')
+        super().__init__('thermal_camera_node')
         
         # WebSocket configuration
         self.websocket_uri = "ws://atvpi.local:8000/ws/thermal"
