@@ -76,7 +76,8 @@ class WebSocketImageSender(Node):
             
             # Send via WebSocket (using threadsafe asyncio call)
             asyncio.run_coroutine_threadsafe(
-                self._send_websocket_data(jpeg_data.tobytes()),
+                # self._send_websocket_data(jpeg_data.tobytes()),
+                self._send_websocket_data("hello world"),
                 asyncio.get_event_loop()
             )
             
