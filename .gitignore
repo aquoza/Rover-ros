@@ -10,3 +10,4 @@
 !setup.py
 !gamepad_websocket
 !gamepad_websocket_node.py
+!thermal_camera.py

@@ -16,7 +16,7 @@ class GamepadWebSocketNode(Node):
         self.mode_pub = self.create_publisher(Int32, 'joystick/mode', 10)
 
         # WebSocket server details
-        self.websocket_uri = "ws://atvpi.local:8000/ws/gamepad"  # Replace with your RPi's IP
+        self.websocket_uri = "ws://0.0.0.0:8000/ws/ros"  # Replace with your RPi's IP
         self.loop = asyncio.get_event_loop()
 
         # Variables
