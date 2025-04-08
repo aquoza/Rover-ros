@@ -80,7 +80,7 @@ class WebSocketImageSender(Node):
                 asyncio.get_event_loop()
             )
             
-            self.get_logger().debug(f"Sent image ({len(jpeg_data)} bytes)", throttle_duration_sec=1)
+            self.get_logger().info(f"Sent image ({len(jpeg_data)} bytes)", throttle_duration_sec=1)
             
         except Exception as e:
             self.get_logger().error(f"Error sending image: {str(e)}")
