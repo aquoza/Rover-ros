@@ -98,16 +98,9 @@ class JoystickSubscriber(Node):
         
         self.send_message()
         #self.get_logger().info(f"Axis: {self.axes}, Buttons: {self.buttons}, Mode: {self.mode}")
-        self.get_logger().info(f"Mode: {self.mode}, Servos: {self.servo_values}, DC: {self.dc_values}")
+        # self.get_logger().info(f"Mode: {self.mode}, Servos: {self.servo_values}, DC: {self.dc_values}")
 
 
-
-
-    def acquire_thermal_image(self):
-        # Hypothetical function to acquire a thermal image
-        self.get_logger().info("Acquiring thermal camera image...")
-        # Add actual thermal camera interaction code here
-        pass
 
 def main(args=None):
     rclpy.init(args=args)
