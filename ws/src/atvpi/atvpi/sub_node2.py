@@ -46,7 +46,7 @@ class JoystickSubscriber(Node):
         
         button_down_state = self.buttons[4]
         if button_down_state == 1 and self.prev_button_down_state == 0:  # Detect rising edge
-            self.node = min(self.node-1, 0)
+            self.node = max(self.node-1, 0)
         self.prev_button_down_state = button_down_state
 
     def mode_callback(self, msg):
@@ -71,7 +71,7 @@ class JoystickSubscriber(Node):
     def timer_callback(self):
         if(self.modes[0] == 1): # arm mode
             self.theta_target = -self.axes[1]*2048/90*6
-            self.phi_target = self.axes[3]*2048/90*6 
+            self.phi_target = self.axes[2]*2048/90*6 
         else:
             self.node = 0 # REMOVE??
             self.theta_target = 0

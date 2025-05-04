@@ -61,7 +61,7 @@ class JoystickSubscriber(Node):
         servo_range = 160/180*math.pi # need to calculate, in rad
 
         if(self.modes[0] == 0 and self.modes[1] == 0): # ackermann
-            steer = self.axes[3] 
+            steer = self.axes[2] 
             throttle = -self.axes[1]*2000
             
             if (steer == 0): # no steer input
