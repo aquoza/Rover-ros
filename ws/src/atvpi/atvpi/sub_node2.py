@@ -10,7 +10,7 @@ class JoystickSubscriber(Node):
         super().__init__('arm_controller')
 
         # Initialize UART
-        self.uart = serial.Serial('/dev/ttyAMA0', baudrate=115200, timeout=1)  # which GPIOs?
+        self.uart = serial.Serial('/dev/AMA1', baudrate=115200, timeout=1)  # which GPIOs?
 
         # Subscribers
         self.create_subscription(Float32MultiArray, 'joystick/axis_values', self.axis_callback, 10)
