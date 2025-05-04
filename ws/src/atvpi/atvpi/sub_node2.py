@@ -59,7 +59,7 @@ class JoystickSubscriber(Node):
         end_byte = b'e'
 
         uint16_values = [self.node]
-        int16_values = [self.theta_target, self.phi_target]
+        int16_values = [int(self.theta_target), int(self.phi_target)]
         
         # Pack message using struct
         message = struct.pack('<c1H2hc', start_byte, *uint16_values, *int16_values, end_byte)
