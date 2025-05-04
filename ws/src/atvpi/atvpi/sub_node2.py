@@ -39,12 +39,12 @@ class JoystickSubscriber(Node):
     def button_callback(self, msg):
         self.buttons = msg.data
         
-        button_up_state = button_values.data[5]
+        button_up_state = self.buttons.data[5]
         if button_up_state == 1 and self.prev_button_up_state == 0:  # Detect rising edge
             self.node = min(self.node+1, 2)
         self.prev_button_up_state = button_up_state
         
-        button_down_state = button_values.data[4]
+        button_down_state = self.buttons.data[4]
         if button_down_state == 1 and self.prev_button_down_state == 0:  # Detect rising edge
             self.node = min(self.node-1, 0)
         self.prev_button_down_state = button_down_state
