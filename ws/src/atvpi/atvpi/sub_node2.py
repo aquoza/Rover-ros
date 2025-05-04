@@ -78,7 +78,7 @@ class JoystickSubscriber(Node):
             self.phi_target = 0
             
         # self.send_message() # should messages be sent all the time?
-        # self.get_logger().info(f"Axis: {self.axes}, Buttons: {self.buttons}, Mode: {self.mode}")
+        self.get_logger().info(f"Axis: {self.axes}, Buttons: {self.buttons}, Modes: {self.modes}")
         self.get_logger().info(f"Node: {self.node}, Theta: {self.theta_target}, Phi: {self.phi_target}")
 
 
