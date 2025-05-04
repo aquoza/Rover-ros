@@ -10,7 +10,7 @@ class JoystickSubscriber(Node):
         super().__init__('arm_controller')
 
         # Initialize UART
-        # self.uart = serial.Serial('/dev/ttyS1', baudrate=115200, timeout=1)  # which GPIOs?
+        self.uart = serial.Serial('/dev/ttyAMA0', baudrate=115200, timeout=1)  # which GPIOs?
 
         # Subscribers
         self.create_subscription(Float32MultiArray, 'joystick/axis_values', self.axis_callback, 10)
@@ -65,7 +65,7 @@ class JoystickSubscriber(Node):
         message = struct.pack('<c1H2hc', start_byte, *uint16_values, *int16_values, end_byte)
 
         # Send the message
-        # self.uart.write(message)
+        self.uart.write(message)
 
 
     def timer_callback(self):
@@ -77,7 +77,7 @@ class JoystickSubscriber(Node):
             self.theta_target = 0
             self.phi_target = 0
             
-        # self.send_message() # should messages be sent all the time?
+        self.send_message() # should messages be sent all the time?
         self.get_logger().info(f"Axis: {self.axes}, Buttons: {self.buttons}, Modes: {self.modes}")
         self.get_logger().info(f"Node: {self.node}, Theta: {self.theta_target}, Phi: {self.phi_target}")
 
