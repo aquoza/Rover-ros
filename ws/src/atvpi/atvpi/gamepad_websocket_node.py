@@ -13,7 +13,7 @@ class GamepadWebSocketNode(Node):
         # ROS2 publishers
         self.axis_pub = self.create_publisher(Float32MultiArray, 'joystick/axis_values', 10)
         self.button_pub = self.create_publisher(Int32MultiArray, 'joystick/button_values', 10)
-        self.mode_pub = self.create_publisher(Int32MultiArray, 'joystick/mode', 10)
+        self.mode_pub = self.create_publisher(Int32MultiArray, 'joystick/modes', 10)
 
         # WebSocket server details
         self.websocket_uri = "ws://0.0.0.0:8000/ws/ros"  # Replace with your RPi's IP
