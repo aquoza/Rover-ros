@@ -7,7 +7,7 @@ import struct
 
 class JoystickSubscriber(Node):
     def __init__(self):
-        super().__init__('joystick_subscriber')
+        super().__init__('atv_controller')
 
         # Initialize UART
         self.uart = serial.Serial('/dev/ttyS0', baudrate=115200, timeout=1)  # Adjust port and baudrate as needed
@@ -15,11 +15,10 @@ class JoystickSubscriber(Node):
         # Subscribers
         self.create_subscription(Float32MultiArray, 'joystick/axis_values', self.axis_callback, 10)
         self.create_subscription(Int32MultiArray, 'joystick/button_values', self.button_callback, 10)
-        self.create_subscription(Int32, 'joystick/mode', self.mode_callback, 10)
+        self.create_subscription(Int32MultiArray, 'joystick/modes', self.mode_callback, 10)
 
         # Variables
-        self.prev_button_1_state = 0  # To detect rising edge
-        self.mode = 0
+        self.modes = [0,0]
         self.axes = [0]*4
         self.buttons = [0]*12
         self.servo_values = [3050,3050,3050,3050]  # Example uint16_t values
@@ -37,7 +36,7 @@ class JoystickSubscriber(Node):
 
     def mode_callback(self, msg):
         # Mode changes
-        self.mode = msg.data
+        self.modes = msg.data # changed
 
     def send_message(self): # send message over serial
         # Define message components
@@ -61,7 +60,7 @@ class JoystickSubscriber(Node):
         l = 16.2 # wheel center to vehicle center length
         servo_range = 160/180*math.pi # need to calculate, in rad
 
-        if(self.mode == 0): # ackermann
+        if(self.modes[0] == 0 and self.modes[1] == 0): # ackermann
             steer = self.axes[3] 
             throttle = -self.axes[1]*2000
             
@@ -81,7 +80,7 @@ class JoystickSubscriber(Node):
 
                 self.dc_values = [throttle*((l**2 + (R+w)**2)**0.5/abs(R))*(1-0.5*abs(steer)),throttle*((l**2 + (R-w)**2)**0.5/abs(R))*(1-0.5*abs(steer))] # R, L
 
-        elif(self.mode == 1): # differential (on the spot)
+        elif(self.modes[0] == 0 and self.modes[1] == 1): # differential (on the spot)
             throttle = self.axes[3]*1500 # limit max duty
 
             theta = 4800.0/servo_range*math.atan(l/w)
@@ -94,7 +93,8 @@ class JoystickSubscriber(Node):
 
             self.dc_values = [throttle, -throttle] # L, R
 
-
+        else:
+            self.servo_values = [3050,3050,3050,3050]
         
         self.send_message()
         #self.get_logger().info(f"Axis: {self.axes}, Buttons: {self.buttons}, Mode: {self.mode}")
@@ -111,5 +111,3 @@ def main(args=None):
 
 if __name__ == '__main__':
     main()
-
-

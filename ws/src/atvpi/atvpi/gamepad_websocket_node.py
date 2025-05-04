@@ -13,15 +13,17 @@ class GamepadWebSocketNode(Node):
         # ROS2 publishers
         self.axis_pub = self.create_publisher(Float32MultiArray, 'joystick/axis_values', 10)
         self.button_pub = self.create_publisher(Int32MultiArray, 'joystick/button_values', 10)
-        self.mode_pub = self.create_publisher(Int32, 'joystick/mode', 10)
+        self.mode_pub = self.create_publisher(Int32MultiArray, 'joystick/mode', 10)
 
         # WebSocket server details
         self.websocket_uri = "ws://0.0.0.0:8000/ws/ros"  # Replace with your RPi's IP
         self.loop = asyncio.get_event_loop()
 
         # Variables
-        self.mode = 0  # 0 or 1
+        self.modes = [0,0]  # 0 or 1
+        self.prev_button_1_state = 0
         self.prev_button_2_state = 0  # To detect button press changes
+
 
         # Start WebSocket client
         self.loop.run_until_complete(self.connect_websocket())
@@ -50,20 +52,27 @@ class GamepadWebSocketNode(Node):
         button_values = Int32MultiArray()
         button_values.data = [int(i) for i in data['buttons']]
 
-        # Check for mode toggle on button[1]
-        button_2_state = button_values.data[1]
-        if button_2_state == 1 and self.prev_button_2_state == 0:  # Detect rising edge
-            self.mode = 1 - self.mode  # Toggle between 0 and 1
 
+        # Check for mode toggle on button[0]
+        button_1_state = button_values.data[3] # check
+        if button_1_state == 1 and self.prev_button_1_state == 0:  # Detect rising edge
+            self.modes[0] = 1 - self.modes[0]  # Toggle between 0 and 1
+
+        button_2_state = button_values.data[1] # check
+        if button_2_state == 1 and self.prev_button_2_state == 0:  # Detect rising edge
+            self.modes[1] = 1 - self.modes[1]  # Toggle between 0 and 1
+
+        self.prev_button_1_state = button_1_state
         self.prev_button_2_state = button_2_state
 
         # Publish data
         self.axis_pub.publish(axis_values)
         self.button_pub.publish(button_values)
 
-        mode_msg = Int32()
-        mode_msg.data = self.mode
-        self.mode_pub.publish(mode_msg)
+        mode_values = Int32MultiArray()
+        mode_values.data = self.modes
+        self.mode_pub.publish(mode_values)
+
         return
 
 
