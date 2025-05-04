@@ -1,13 +1,21 @@
-# Ignore everything
-*
+# # Ignore everything
+# *
 
-# Except the following files
-!ws
-!src
-!atvpi
-!pub.py
-!sub_node.py
-!setup.py
-!gamepad_websocket
-!gamepad_websocket_node.py
-!thermal_camera.py
+# # Except the following files
+# !ws
+# !src
+# !atvpi
+# !pub.py
+# !sub_node.py
+# !setup.py
+# !gamepad_websocket
+# !gamepad_websocket_node.py
+# !thermal_camera.py
+# !launch
+# !atvpi.launch.py
+
+files
+resource
+test
+package.xml
+setup.cfg
