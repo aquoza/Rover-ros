@@ -8,6 +8,7 @@ import struct
 class JoystickSubscriber(Node):
     def __init__(self):
         super().__init__('atv_controller')
+        self.get_logger().info("sub Node Started")
 
         # Initialize UART
         self.uart = serial.Serial('/dev/ttyS0', baudrate=115200, timeout=1)  # Adjust port and baudrate as needed
